@@ -1,0 +1,23 @@
+version: '3'
+services:
+  flicd:
+    build:
+      context: .
+      args: 
+        - PLATFORM_ARCH=armv6l # default is arm6vl. Optional architectures are aarch64, armv6l, i386, x86_64.
+    container_name: flicd
+    restart: always
+    environment:
+      - FLIC_HCI_DEVICE=hci0 #default is hci0
+      - FLIC_PORT=5551 #default is 5551
+      - FLIC_DB_NAME=flicd.db #default is flicd.db
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./data:/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
