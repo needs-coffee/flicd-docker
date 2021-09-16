@@ -1,5 +1,7 @@
 # flicd-docker
 
+[![GitHub issues](https://img.shields.io/github/issues/needs-coffee/flicd-docker)](https://github.com/needs-coffee/flicd-docker/issues) ![GitHub](https://img.shields.io/github/license/needs-coffee/flicd-docker) 
+
 For adding support for [Flic buttons](https://flic.io) to a Linux host. Can be used to integrate into [Home Assistant](https://www.home-assistant.io/integrations/flic/) along with any software compatible with the Flic daemon.
 
 This container integrates the latest official [Flic SDK for Linux](https://github.com/50ButtonsEach/fliclib-linux-hci) which is compatible with Flic 1 and Flic 2 buttons.
