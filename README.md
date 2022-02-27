@@ -10,6 +10,8 @@ Full documentation and the licence for the Flic SDK can be found at - https://gi
 
 This image has a simple healthcheck that checks if the desired port remains open on the host.
 
+can be found on dockerhub at [https://hub.docker.com/r/needs1coffee/flicd-docker](https://hub.docker.com/r/needs1coffee/flicd-docker)
+
 Usage
 -----
 Either by using the included docker-compose file with:
@@ -46,8 +48,8 @@ Modified date: 16-09-2021
 
 To-Do
 -----
-- [ ] Add to DockerHub
-- [ ] Create Multi-arch images
+- [X] Add to DockerHub
+- [X] Create Multi-arch images
 - [ ] Automate platform detection when building
 
 Licence
