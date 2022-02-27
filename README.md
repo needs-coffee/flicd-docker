@@ -20,7 +20,7 @@ docker-compose up -d
 ```
 or with the docker cli:
 ```bash
-docker build --build-args PLATFORM_ARCH=armv6l -t flicd .
+docker build --build-arg PLATFORM_ARCH=armv6l -t flicd .
 docker run -d --net=host --cap-add NET_ADMIN -v ./data:/data flicd
 ```   
 **NOTE:** The image needs to be run with the NET_ADMIN capability and net=host in order to be able to manage the Bluetooth hardware.
